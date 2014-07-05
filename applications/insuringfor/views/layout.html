@@ -92,14 +92,14 @@
       color:rgb(235,235,235);
     }
     #login-area:hover{color:rgb(255,255,255)}
-    #logo-inlrn{
+    #logo-insuringfor{
       float:left;
       height:50px;
       padding-top:2px;
       padding-right:10px;
       padding-bottom:13px;
     }
-    #logo-inlrn:hover{background-color:rgb(56,107,158);}
+    #logo-insuringfor:hover{background-color:rgb(56,107,158);}
     #main-content{border-top:3px solid rgb(201,211,231);}
     #member-icon-area{
       float:right;
@@ -173,32 +173,14 @@
         <div class="" id="site-header">
           <div id="logo-container">
             <a href="/">
-              <img id="logo-inlrn" src="/inlrn/static/images/inlrnlogo.png" />
+              <img id="logo-insuringfor" src="/insuringfor/static/images/insuringforlogo.png" />
+              <h4 style="float:left;color:rgb(220,220,220);">insuringfor</h4>
             </a>
           </div>
           <div id="header-icons" style="margin-top:30px;margin-left:3px;float:left;">
-            <a href="/discover"><i id="discover-icon" class="fa fa-random"></i></a>
-            <a href="/courses"><i id="courses-icon" class="fa fa-pencil"></i></a>
-            <a href="/academies"><i id="academies-icon" class="fa fa-th"></i></a>
-            <a href="/feed"><i id="feed-icon" class="fa fa-align-justify"></i></a>
-          </div>
-          <div id="header-search" style="float:left;margin-left:20px;margin-top:23px;">
-            <div class="input-append">
-              <input type="text">
-              <div class="btn-group" style="margin-top:0px;">
-                <button class="btn" tabindex="-1"><i class="icon-search"></i></button>
-                <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
-                <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                </ul>            
-              </div>
-            </div>
+            <a href="/discover/"><i id="discover-icon" class="fa fa-random"></i></a>
+            <a href="/plans/"><i id="academies-icon" class="fa fa-th"></i></a>
+            <a href="/feed/"><i id="feed-icon" class="fa fa-align-justify"></i></a>
           </div>
           {{if auth.is_logged_in():}}
             <ul id="member-name-area" class="nav pull-right nav_bar">
@@ -243,6 +225,12 @@
               <a data-toggle="modal" href="#login-or-signup" id="login-area">login or signup</a>
             </ul>
           {{pass}}
+          <div id="search-bar" style="float:right;margin-right:30px;margin-top:19px;">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-search"></i></span>
+              <input class="span2" id="prependedInput" type="text" placeholder="search">
+            </div>    
+          </div>
         </div>
       </div>
     </div>
@@ -267,9 +255,9 @@
           <br>
           <div class="modal-body" style="">
             <div id="external-login" style="display: table;margin: 0 auto;">
-              <a id="facebook-login"><img src="inlrn/static/images/facebook-login.png" style="width:64px"/></a>
-              <a id="twitter-login"><img src="inlrn/static/images/twitter-login.png" style="width:64px"/></a>
-              <a id="google-login"><img src="inlrn/static/images/google-login.png" style="width:64px"/></a> 
+              <a id="facebook-login"><img src="insuringfor/static/images/facebook-login.png" style="width:64px"/></a>
+              <a id="twitter-login"><img src="insuringfor/static/images/twitter-login.png" style="width:64px"/></a>
+              <a id="google-login"><img src="insuringfor/static/images/google-login.png" style="width:64px"/></a> 
             </div>
             <br><br>
             <ul style="float:left;margin-left:5%"class="nav nav-tabs" id="profile-tab" data-tabs="tabs">
@@ -319,12 +307,12 @@
   <!-- inline-scripts ============================================= -->
   <script>
     $("#login-or-signup" ).draggable({handle:"#login-or-signup-header", cursor:"move"}); 
-    $("#logo-inlrn").on({
+    $("#logo-insuringfor").on({
       "mouseover" : function() {
-        this.src = '/inlrn/static/images/inlrn_hover.png';
+        this.src = '/insuringfor/static/images/insuringfor_hover.png';
       },
       "mouseout" : function() {
-        this.src='/inlrn/static/images/inlrnlogo.png';
+        this.src='/insuringfor/static/images/insuringforlogo.png';
       }
     }); 
 

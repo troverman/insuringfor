@@ -1,46 +1,45 @@
 {{extend 'layout.html'}}
-
-<div style="margin-left:10%;">
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
-	<p class="lead">opensource, transparent, nonprofit, crowdowned, insurance</p>
+<style>
+	#project-list-container{text-align:center;width:100%;}
+    #project-list-item{border:2px solid rgb(180,180,180);display:inline-block;padding:10px;margin:7px;}
+    #project-list-item:hover{border:2px solid rgb(110,110,110);display:inline-block;padding:11px;margin:7px;}
+</style>
+<div style="background-color:rgb(102,220,197)">
+	<br><br><br>
+	<br><br><br>
+	<p class="lead" style="font-size:128px;text-align:center;color:rgb(255,255,255);">insurance done right</p>
+	<br><br><br>
+	<br><br><br>
+</div>
+<div style="background-color:rgb(72,190,167)">
+	<br><br>
+	<p class="lead" style="text-align:center;color:rgb(255,255,255);">opensource, transparent, nonprofit, and crowdowned</p>
+	<br>
+</div>
+<div style="margin-left:10%;margin-right:10%">
+	<Br><br><br><br><br>
+	<div class="input-append">
+    	<input type="text">
+        <div class="btn-group" style="margin-top:0px;">
+            <a href="/search/"><button class="btn" tabindex="-1"><i class="icon-search"></i></button></a>          
+        </div>
+    </div>
+	<br><br><br>
+	<p class="lead">PICTURES</p>
+	<p class="lead">view how premiums are calculated</p>
+	<p class="lead">transparent transaction log</p>
+	<br><br><br>
+	<div id="project-list-container">
+	{{for x in range(50):}}
+		<div id="project-list-item">
+			<p class="lead">types of insurance</p>
+			<p class="lead">PICTURES</p>
+		</div>
+	{{pass}}
+	</div>
+	<br><br><br><br>
+	<p class="lead">infographic and such</p>
+	<p class="lead">talk about transparency</p>
 
 </div>
 <br><br><br><br>
